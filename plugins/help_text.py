@@ -1,6 +1,5 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from vars import Config
 from translation import Translation
 
 @Client.on_message(filters.command(["start"]))
