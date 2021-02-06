@@ -10,7 +10,7 @@ Hello {}, I' am Media or File to `Telegra.ph` Link Uploader Bot.
 ➠ I will then upload it to the `Telegra.ph` link.
 """
 
-    ABOUT_ME = """
+    ABOUT_TEXT = """
 <b><u>Informations About Me</u></b>
 
 I am a Clone of @FnTelegraphBot. Please Join @FnProjects and @FayasChat. Click here to create a clone like me.
