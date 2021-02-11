@@ -1,7 +1,7 @@
 {
   "name": "Telegraph Uploader Bot",
   "description": "A bot to upload telegram images to telegraph",
-  "repository": "https://github.com/FayasOfficial/Telegraph-Uploader-Bot",
+  "repository": "https://github.com/FnKerala/Telegraph-Uploader-Bot",
   "keywords": ["telegraph", "file or media", "link uploader","telegram bot"],
   "env": {
      "BOT_TOKEN": {
