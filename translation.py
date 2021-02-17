@@ -15,7 +15,7 @@ Hello {}, I' am Media or File to `Telegra.ph` Link Uploader Bot.
 
 I am a Clone of @FnTelegraphBot. Please Join @FNPROJECTS Channel and @FayasChat Group.
 
-Source Code :- https://github.com/FayasOfficial/Telegraph-Uploader-Bot
+Source Code :- https://github.com/FayasNoushad/Telegraph-Uploader-Bot
 """
     DOWNLOAD_TEXT = "<code>Downloading to My Server ...</code>"
     UPLOADING_TEXT = "<code>Downloading Completed. Now I'am Uploading to telegra.ph Link ...</code>"
