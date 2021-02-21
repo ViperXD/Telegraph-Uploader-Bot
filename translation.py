@@ -20,3 +20,4 @@ Source Code :- https://github.com/FayasNoushad/Telegraph-Uploader-Bot
     DOWNLOAD_TEXT = "<code>Downloading to My Server ...</code>"
     UPLOADING_TEXT = "<code>Downloading Completed. Now I'am Uploading to telegra.ph Link ...</code>"
     SOMETHING_WRONG = "Something Wrong! Click help button for more..."
+    FREE_USER_LIMIT_Q_SZE = "Sorry Friend, Free users can only 1 request per {} minutes. Please try again after {} seconds later."

@@ -19,6 +19,10 @@
     "AUTH_USERS": {
       "description": "Array to store users who are authorized to use the bot",
       "value": "1266681279"
+    },
+    "TIME_LIMIT": {
+      "description": "For time to next process",
+      "value":"0"
     }
    },
    "buildpacks": [
