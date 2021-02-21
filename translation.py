@@ -1,8 +1,6 @@
 class Translation(object):
     START_TEXT = """
 Hello {}, I' am Media or File to `Telegra.ph` Link Uploader Bot.
-
-/help for more
 """
     HELP_USER = """
 <b><u>Help and Informations</u></b>
