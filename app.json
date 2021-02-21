@@ -23,6 +23,11 @@
     "TIME_LIMIT": {
       "description": "For time to next process",
       "value":"0"
+    },
+    "UPDATE_CHANNEL": {
+      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
+      "value": "",
+      "required": false
     }
    },
    "buildpacks": [

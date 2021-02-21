@@ -21,3 +21,5 @@ Source Code :- https://github.com/FayasNoushad/Telegraph-Uploader-Bot
     UPLOADING_TEXT = "<code>Downloading Completed. Now I'am Uploading to telegra.ph Link ...</code>"
     SOMETHING_WRONG = "Something Wrong! Click help button for more..."
     FREE_USER_LIMIT_Q_SZE = "Sorry Friend, Free users can only 1 request per {} minutes. Please try again after {} seconds later."
+    FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
+    BANNED_USER_TEXT = "<code>You are Banned!</code>"

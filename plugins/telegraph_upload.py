@@ -1,12 +1,25 @@
 import os
 from telegraph import upload_file
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
+from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from translation import Translation 
 from vars import Config
 
 @Client.on_message(filters.media & filters.private)
 async def getmedia(client, message):
+    if Config.UPDATE_CHANNEL:
+        try:
+          user = await bot.get_chat_member(Config.UPDATE_CHANNEL, update.chat.id)
+          if user.status == "kicked":
+            await update.reply_text(text=Translation.BANNED_USER_TEXT)
+            return
+        except UserNotParticipant:
+          await update.reply_text(text=Translation.FORCE_SUBSCRIBE_TEXT, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😎 Join Channel 😎", url=f"https://telegram.me/{Config.UPDATE_CHANNEL}")]]))
+          return
+        except Exception:
+          await update.reply_text(text=Translation.SOMETHING_WRONG)
+          return
         if update.from_user.id in Config.ADL_BOT_RQ:
           if update.from_user.id not in Config.AUTH_USERS:
             current_time = time.time()
