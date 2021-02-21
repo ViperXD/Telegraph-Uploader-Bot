@@ -15,6 +15,10 @@
     "API_HASH": {
       "description": "Your API_HASH from https://my.telegram.org/apps",
       "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "Array to store users who are authorized to use the bot",
+      "value": "1266681279"
     }
    },
    "buildpacks": [
