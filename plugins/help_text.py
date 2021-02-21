@@ -7,7 +7,8 @@ async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
         text=Translation.START_TEXT.format(message.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔰 HELP 🔰", callback_data="help"), InlineKeyboardButton("🔰 ABOUT 🔰", callback_data="about"), ],
+                                           [InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat')]]),
         reply_to_message_id=message.message_id
     )
 
@@ -16,7 +17,8 @@ async def help(client, message):
     await client.send_message(    
         chat_id=message.chat.id,
         text=Translation.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat'),],
+                                           [InlineKeyboardButton("🔙 BACK", callback_data="home"), InlineKeyboardButton("ℹ️ ABOUT", callback_data="about"), InlineKeyboardButton("✖️ CLOSE", callback_data="close")]]),
         reply_to_message_id=message.message_id
     )
 
@@ -27,5 +29,6 @@ async def about(client, message):
         text=Translation.ABOUT_TEXT,
         parse_mode="html",
         disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔙 BACK 🔙", callback_data="help"), InlineKeyboardButton("✖️ CLOSE ✖️", callback_data="close")]]),
         reply_to_message_id=message.message_id
     )
