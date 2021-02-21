@@ -39,7 +39,7 @@ async def getmedia(client, message):
     try:
         response = upload_file(medianame)
     except Exception as error:
-        await dwn.edit_text(text=Translation.SOMETHING_WRONG)
+        await dwn.edit_text(text=Translation.SOMETHING_WRONG, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("❔ More Help ❔", callback_data="help")]]))
         return
     await dwn.edit_text(
         text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FNPROJECTS",
