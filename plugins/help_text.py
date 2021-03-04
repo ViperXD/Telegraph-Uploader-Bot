@@ -18,7 +18,7 @@ async def help(client, message):
         chat_id=message.chat.id,
         text=Translation.HELP_USER,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat'),],
-                                           [InlineKeyboardButton("🔙 BACK", callback_data="home"), InlineKeyboardButton("ℹ️ ABOUT", callback_data="about"), InlineKeyboardButton("✖️ CLOSE", callback_data="close")]]),
+                                           [InlineKeyboardButton("🔙 BAC", callback_data="home"), InlineKeyboardButton("ℹ️ ABOUT", callback_data="about"), InlineKeyboardButton("✖️ CLOSE", callback_data="close")]]),
         reply_to_message_id=message.message_id
     )
 
