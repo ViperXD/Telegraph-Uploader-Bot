@@ -7,8 +7,8 @@ async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
         text=Translation.START_TEXT.format(message.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔰 HELP 🔰", callback_data="help"), InlineKeyboardButton("🔰 ABOUT 🔰", callback_data="about"), ],
-                                           [InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("HELP", callback_data="help"), InlineKeyboardButton("🔰 ABOUT 🔰", callback_data="about"), ],
+                                           [InlineKeyboardButton('Channel', url='https://telegram.me/VKPROJECTS'), InlineKeyboardButton('Group', url='https://telegram.me/VKP_BOTS')]]),
         reply_to_message_id=message.message_id
     )
 
@@ -17,7 +17,7 @@ async def help(client, message):
     await client.send_message(    
         chat_id=message.chat.id,
         text=Translation.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Channel ⚙', url='https://telegram.me/FNPROJECTS'), InlineKeyboardButton('⚙ Group ⚙', url='https://telegram.me/FayasChat'),],
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Channel', url='https://telegram.me/VKPROJECTS'), InlineKeyboardButton('Group', url='https://telegram.me/VKP_BOTS'),],
                                            [InlineKeyboardButton("🔙 BACK", callback_data="home"), InlineKeyboardButton("ℹ️ ABOUT", callback_data="about"), InlineKeyboardButton("✖️ CLOSE", callback_data="close")]]),
         reply_to_message_id=message.message_id
     )
