@@ -16,10 +16,10 @@ async def getmedia(client, message):
         await dwn.edit_text(text=Translation.SOMETHING_WRONG)
         return
     await dwn.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FNPROJECTS",
+        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @VKPROJECTS",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"), InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}"), ],
-                                           [InlineKeyboardButton(text="⚙ Join Channel ⚙", url="https://telegram.me/FNPROJECTS")]])
+                                           [InlineKeyboardButton(text="⚙ Join Channel ⚙", url="https://telegram.me/VKPROJECTS")]])
         )
     try:
         os.remove(medianame)
