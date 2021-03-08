@@ -1,6 +1,14 @@
 class Translation(object):
     START_TEXT = """
-Hello {}, I' am Media or File to `Telegra.ph` Link Uploader Bot.
+Hai,{}
+
+I'm a simple Telegraph Uploader bot💯
+
+I can convert gif, image or video(Mp4only) into telegra.ph links
+
+Click /help for more details...
+
+You must subscribe our channel in order to use me😇
 """
     HELP_USER = """
 <b><u>Help and Informations</u></b>
@@ -13,9 +21,13 @@ Hello {}, I' am Media or File to `Telegra.ph` Link Uploader Bot.
     ABOUT_TEXT = """
 <b><u>Informations About Me</u></b>
 
-I am a Clone of @FnTelegraphBot. Please Join @FnProjects and @FayasChat. Click here to create a clone like me.
+⭕️My Name : Telegraph BOT
+        
+⭕️Creater : @VKPROJECTS
 
-Source Code :- https://github.com/FayasOfficial/Telegraph-Uploader-Bot
+⭕️Language : Python3
+
+⭕️Library : Pyrogram asyncio 0.16.1
 """
     DOWNLOAD_TEXT = "<code>Downloading to My Server ...</code>"
     UPLOADING_TEXT = "<code>Downloading Completed. Now I'am Uploading to telegra.ph Link ...</code>"
